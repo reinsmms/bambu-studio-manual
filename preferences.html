@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preferences – Bambu Studio Manual (A1)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Bambu Studio Manual</div>
+        <div class="sidebar-subtitle">Bambu Lab A1 · No AMS Lite</div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Real-world verified</span>
+        </div>
+        <div class="sidebar-meta">
+          <span>Studio: 2.4.0.70</span>
+          <span>Profile: A1 (No AMS)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Overview</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html">
+              <span class="nav-bullet"></span>
+              <span>Intro & Scope</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Menus & Preferences</div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="file-menu.html">
+              <span class="nav-bullet"></span>
+              <span>File Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="help-menu.html">
+              <span class="nav-bullet"></span>
+              <span>Help Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="view-menu.html">
+              <span class="nav-bullet"></span>
+              <span>View Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="preferences.html" class="active">
+              <span class="nav-bullet"></span>
+              <span>Preferences</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Key Features</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="supports.html"><span class="nav-bullet"></span><span>Supports</span></a></li>
+          <li class="nav-item"><a href="per-object.html"><span class="nav-bullet"></span><span>Per-Object Settings</span></a></li>
+          <li class="nav-item"><a href="ironing.html"><span class="nav-bullet"></span><span>Ironing</span></a></li>
+          <li class="nav-item"><a href="timelapse.html"><span class="nav-bullet"></span><span>Timelapse</span></a></li>
+          <li class="nav-item"><a href="workflows.html"><span class="nav-bullet"></span><span>Workflows</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Reference</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="troubleshooting.html"><span class="nav-bullet"></span><span>Troubleshooting</span></a></li>
+          <li class="nav-item"><a href="glossary.html"><span class="nav-bullet"></span><span>Glossary</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="top-bar">
+        <div class="top-bar-main">
+          <div class="top-title">Preferences</div>
+          <div class="top-subtitle">
+            Global behavior settings for Bambu Studio 2.4.0.70 on Bambu Lab A1 (No AMS Lite).
+          </div>
+        </div>
+        <div class="version-pill">
+          <strong>Bambu Studio: 2.4.0.70</strong>
+          <span>Verified on: 2025-11-28</span>
+          <span>Profile: A1 · No AMS</span>
+        </div>
+      </header>
+
+      <!-- OVERVIEW -->
+      <section class="content-group">
+        <div class="content-heading">Overview</div>
+        <div class="content-tagline">
+          Preferences control how Studio behaves in general: units, preview, autosave, downloads, and more.
+          These do not change individual project settings like layer height or infill.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Safe vs “dangerous” toggles</div>
+              <p style="font-size:13px;">
+                Most options in Preferences are safe to experiment with – you won’t break the printer.
+                We’ll call out anything that deserves extra caution.
+              </p>
+            </div>
+            <p style="font-size:13px; line-height:1.6;">
+              The main categories you’ll see under <strong>Edit → Preferences</strong> are:
+            </p>
+            <ul style="font-size:13px; line-height:1.6;">
+              <li><strong>General</strong> – language, region, units, miscellaneous toggles.</li>
+              <li><strong>3D Settings</strong> – viewport and preview behavior.</li>
+              <li><strong>Presets</strong> – how Studio syncs and updates built-in profiles.</li>
+              <li><strong>File Associations</strong> – which app opens 3MF/STL/STEP by default.</li>
+              <li><strong>Online Models</strong> – MakerWorld tiles on the home screen.</li>
+              <li><strong>Project</strong> – recent projects list and autosave.</li>
+              <li><strong>Downloads & Media</strong> – where files and timelapses go.</li>
+              <li><strong>Dark Mode & UX</strong> – theme and login convenience.</li>
+              <li><strong>Develop Mode</strong> – experimental developer features.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">
+                Preferences window screenshot (General tab)
+              </div>
+              <ul class="callout-list" style="margin-top:10px;">
+                <li><span class="callout-number">1</span> Category list (General, 3D, Presets, etc.).</li>
+                <li><span class="callout-number">2</span> Option list for the selected category.</li>
+                <li><span class="callout-number">3</span> Buttons to reset or apply changes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GENERAL SETTINGS -->
+      <section class="content-group">
+        <div class="content-heading">General Settings</div>
+        <div class="content-tagline">
+          Basic language, units, and behavior settings you can safely tweak.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Localization & basics</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li><strong>Language</strong> – UI language for Studio.</li>
+                <li><strong>Login region</strong> – which BambuCloud region you talk to (leave on default unless you know you need to change it).</li>
+                <li><strong>Units</strong> – usually millimeters for 3D work.</li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Instance & plate behavior</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Keep only one Bambu Studio instance</strong> – prevents opening multiple Studio windows.
+                  Handy if you sometimes get lost in which window is “live”.
+                </li>
+                <li>
+                  <strong>Auto plate type</strong> – automatically select the plate (textured/smooth) stored with a project.
+                  Safe to leave on.
+                </li>
+                <li>
+                  <strong>Show step mesh parameter setting dialog</strong> – shows detailed bed mesh options before leveling.
+                </li>
+                <li>
+                  <strong>Support beta version update</strong> – if enabled, Studio may offer beta updates instead of only stable.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Value transfer & safety</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Transfer modified value when switching presets</strong><br>
+                  If ON, custom changes (like 22% infill) follow you when you pick a different preset.
+                  If OFF, switching presets loads them exactly as saved.
+                </li>
+                <li>
+                  <strong>Remove restriction on mixed printing of high and low temp materials</strong><br>
+                  Relaxes some temperature safety checks. More relevant with AMS; on A1 without AMS it has limited impact.
+                  When in doubt, leave OFF.
+                </li>
+                <li>
+                  <strong>Auto Flush</strong><br>
+                  Controls purge behavior when switching filaments/presets. Behavior is more visible with AMS; you won’t “brick” anything by toggling, but it can change purge length and timing.
+                </li>
+                <li>
+                  Several <strong>Clear my choice</strong> buttons<br>
+                  These reset “Don’t show again” confirmations so dialogs come back.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3D SETTINGS -->
+      <section class="content-group">
+        <div class="content-heading">3D Settings</div>
+        <div class="content-tagline">
+          How the 3D viewport and preview behave – purely visual, no impact on the printer.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">View & navigation</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Zoom to mouse position</strong><br>
+                  If ON, the camera zooms toward where the cursor points.
+                  If OFF, zoom stays centered on the screen.
+                </li>
+                <li>
+                  <strong>Always show shells in preview</strong><br>
+                  Keeps perimeters visible even when other preview filters are active.
+                </li>
+                <li>
+                  <strong>Import a single SVG and split it</strong><br>
+                  When importing SVG, separate parts into individual shapes by default.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Rendering & visual quality</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Enable gamma correction for imported OBJ file</strong><br>
+                  Adjusts shading so imported OBJ models look more correct.
+                </li>
+                <li>
+                  <strong>Remember last used color scheme</strong><br>
+                  Keeps your chosen preview colors between sessions.
+                </li>
+                <li>
+                  <strong>Improve rendering performance by LOD</strong><br>
+                  Uses level-of-detail trickery to keep Studio responsive on larger scenes.
+                </li>
+                <li>
+                  <strong>Enable advanced gcode viewer</strong><br>
+                  Unlocks more detailed toolpath visualization in Preview. Slightly heavier but very useful.
+                </li>
+                <li>
+                  <strong>Toolbar style</strong><br>
+                  Choose between compact or full toolbar layouts.
+                </li>
+                <li>
+                  <strong>Grabber scale</strong><br>
+                  Changes the size of the move/rotate/scale gizmos in the 3D view.
+                  Turn this up if the arrows feel tiny on a high-res monitor.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRESETS & FILE ASSOCIATIONS -->
+      <section class="content-group">
+        <div class="content-heading">Presets & File Associations</div>
+        <div class="content-tagline">
+          How Studio syncs and opens your printers, filaments, and projects.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Preset sync</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Auto sync user presets</strong><br>
+                  Syncs your custom printer/filament/process profiles with your Bambu account (when logged in).
+                </li>
+                <li>
+                  <strong>Auto check for system presets updates</strong><br>
+                  Keeps Bambu’s built-in presets (e.g., official A1 PLA) up to date.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">File associations</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Associate 3mf with Bambu Studio</strong><br>
+                  If ON, double-clicking a .3mf file in Windows opens Studio.
+                </li>
+                <li>
+                  <strong>Associate stl with Bambu Studio</strong><br>
+                  Controls whether Studio is the default app for .stl files.
+                </li>
+                <li>
+                  <strong>Associate step with Bambu Studio</strong><br>
+                  Same for .step files (when Studio is used as a quick viewer/importer).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ONLINE, PROJECT, DOWNLOADS, MEDIA -->
+      <section class="content-group">
+        <div class="content-heading">Online, Project & Media Settings</div>
+        <div class="content-tagline">
+          Home screen tiles, recents, autosave, download folders, and camera behavior.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Online models & home screen</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Show online staff-picked models</strong><br>
+                  Enables curated MakerWorld tiles on the home page.
+                </li>
+                <li>
+                  <strong>Show history on the home page</strong><br>
+                  Shows your recently used models/projects on the startup screen.
+                </li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Project history & autosave</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Maximum recent projects</strong><br>
+                  Controls the length of the <em>File → Recent Projects</em> list.
+                </li>
+                <li>
+                  <strong>Auto-backup every N seconds</strong><br>
+                  Studio silently saves backup copies of your current project.
+                  <strong>Highly recommended to keep enabled</strong> so you can recover from crashes.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Downloads & media</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Downloads folder</strong><br>
+                  Where timelapses, MakerWorld projects, and other downloads are stored.
+                </li>
+                <li>
+                  <strong>Keep liveview when printing</strong><br>
+                  If ON, the camera preview stays active during prints (uses more bandwidth/CPU).
+                </li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Theme & login UX</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Enable dark mode</strong><br>
+                  Switches Studio’s UI to dark theme (easier on the eyes).
+                </li>
+                <li>
+                  <strong>Auto-fill previously logged-in accounts</strong><br>
+                  Remembers Bambu / MakerWorld login details for faster sign-in.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEVELOP MODE -->
+      <section class="content-group">
+        <div class="content-heading">Develop Mode</div>
+        <div class="content-tagline">
+          Experimental features – only worth touching if you know exactly why.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Developer toggles</div>
+              <ul style="font-size:13px; line-height:1.6;">
+                <li>
+                  <strong>Develop mode</strong><br>
+                  Turns on internal/developer features. These can change how Studio behaves and may introduce bugs.
+                  For normal A1 use, leaving this OFF is recommended.
+                </li>
+                <li>
+                  <strong>Skip AMS blacklist check</strong><br>
+                  Affects material compatibility checks for AMS usage. With A1 and no AMS Lite, this doesn’t do much and can be safely ignored.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">
+                Preferences window screenshot (Develop tab)
+              </div>
+              <ul class="callout-list" style="margin-top:10px;">
+                <li><span class="callout-number">1</span> Develop mode toggle.</li>
+                <li><span class="callout-number">2</span> AMS blacklist check toggle.</li>
+                <li><span class="callout-number">3</span> Apply / cancel area.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px; font-size:12px; color:var(--text-faint);">
+          <em>For this manual, we assume Develop mode is OFF unless a specific feature calls for it and is explicitly documented.</em>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
