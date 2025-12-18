@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preferences – Bambu Studio Manual (A1)</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <div class="layout">
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Bambu Studio Manual</div>
+        <div class="sidebar-subtitle">Bambu Lab A1 · No AMS Lite</div>
+        <div class="badge"><span class="badge-dot"></span><span>Real-world verified</span></div>
+        <div class="sidebar-meta">
+          <span>Studio: 2.4.0.70</span>
+          <span>Profile: A1 (No AMS)</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Overview</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class=""><span class="nav-bullet"></span><span>Intro & Scope</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Menus & Preferences</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="file-menu.html" class=""><span class="nav-bullet"></span><span>File Menu</span></a></li>
+          <li class="nav-item"><a href="help-menu.html" class=""><span class="nav-bullet"></span><span>Help Menu</span></a></li>
+          <li class="nav-item"><a href="view-menu.html" class=""><span class="nav-bullet"></span><span>View Menu</span></a></li>
+          <li class="nav-item"><a href="preferences.html" class="active"><span class="nav-bullet"></span><span>Preferences</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Key Features</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="prepare.html" class=""><span class="nav-bullet"></span><span>Prepare Tab</span></a></li>
+          <li class="nav-item"><a href="supports.html" class=""><span class="nav-bullet"></span><span>Supports</span></a></li>
+          <li class="nav-item"><a href="per-object.html" class=""><span class="nav-bullet"></span><span>Per-Object Settings</span></a></li>
+          <li class="nav-item"><a href="ironing.html" class=""><span class="nav-bullet"></span><span>Ironing</span></a></li>
+          <li class="nav-item"><a href="timelapse.html" class=""><span class="nav-bullet"></span><span>Timelapse</span></a></li>
+          <li class="nav-item"><a href="workflows.html" class=""><span class="nav-bullet"></span><span>Workflows</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Mobile App</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="bambu-handy.html" class=""><span class="nav-bullet"></span><span>Bambu Handy</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="nav-section-title">Reference</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="troubleshooting.html" class=""><span class="nav-bullet"></span><span>Troubleshooting</span></a></li>
+          <li class="nav-item"><a href="glossary.html" class=""><span class="nav-bullet"></span><span>Glossary</span></a></li>
+          <li class="nav-item"><a href="update-history.html" class=""><span class="nav-bullet"></span><span>Update History</span></a></li>
+        </ul>
+      </div>
+    </aside>
+    
+    <main class="main">
+      <header class="top-bar">
+        <div class="top-bar-main">
+          <div class="top-title">Preferences</div>
+          <div class="top-subtitle">
+            What each Preferences section does in Bambu Studio, with practical “safe to change / be careful” notes.
+          </div>
+        </div>
+        <div class="version-pill">
+          <strong>Bambu Studio: 2.4.0.70</strong>
+          <span>Last updated: 2025-12-18</span>
+          <span>A1 · No AMS Lite</span>
+        </div>
+      </header>
+
+      <section class="content-group" id="overview">
+        <div class="content-heading">How Preferences differs from Presets</div>
+        <div class="content-tagline">
+          Preferences change Studio’s behavior and UI. Presets change slicing and printer behavior.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Quick rule of thumb</div>
+              <ul style="font-size:13px; line-height:1.6; margin:0; padding-left:18px;">
+                <li><strong>Preferences</strong> = app behavior, UI, storage locations, viewer options.</li>
+                <li><strong>Filament/Process/Printer presets</strong> = temperatures, speeds, cooling, start/end G-code, etc.</li>
+              </ul>
+            </div>
+
+            <p style="font-size:13px; line-height:1.7;">
+              Most Preference toggles are safe to explore. The main “gotcha” area is anything related to
+              <strong>system presets updates</strong> and preset sync, because that can change slicing templates and
+              start/end G-code behavior across printers (even if you’re only using an A1).
+            </p>
+
+            <div class="callout-box">
+              <div class="callout-title">This manual’s stance</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                We recommend leaving <strong>Auto check for system presets updates</strong> ON, and we log meaningful changes
+                in <a href="update-history.html">Update History</a>.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences window (left categories visible)</div>
+              <ul class="callout-list" style="margin-top:10px;">
+                <li><span class="callout-number">1</span> Category list (General, 3D Settings, Presets, etc.)</li>
+                <li><span class="callout-number">2</span> Options for the selected category</li>
+                <li><span class="callout-number">3</span> Apply / Close area</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="general">
+        <div class="content-heading">General</div>
+        <div class="content-tagline">Language, units, “don’t show again” resets, and general quality-of-life toggles.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Common options you’ll actually use</div>
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li><strong>Language / Region</strong>: UI language and service region.</li>
+                <li><strong>Units</strong>: keep on mm for 3D printing sanity.</li>
+                <li><strong>Keep only one Bambu Studio instance</strong>: prevents multiple windows.</li>
+                <li><strong>Clear my choice</strong> buttons: re-enable dialogs you previously suppressed.</li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Transfer modified value when switching presets</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                If ON, your manual tweaks (e.g., infill % or walls) follow you when you switch presets. If OFF,
+                switching presets returns to the preset’s saved defaults. If you ever feel like “Studio keeps changing settings on me,”
+                check this first.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences → General tab</div>
+              <div class="caption">Capture the full General tab so we can map labels 1:1.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="3d">
+        <div class="content-heading">3D Settings</div>
+        <div class="content-tagline">Viewer behavior and performance. These are visual only; they don’t change prints.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Most useful toggles</div>
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li><strong>Zoom to mouse position</strong>: zoom toward cursor vs screen center.</li>
+                <li><strong>Improve rendering performance by LOD</strong>: helps on heavy scenes.</li>
+                <li><strong>Enable advanced gcode viewer</strong>: better Preview detail (slightly heavier).</li>
+                <li><strong>Grabber scale</strong>: makes move/rotate gizmos larger.</li>
+              </ul>
+            </div>
+
+            <p style="font-size:13px; line-height:1.7;">
+              If you notice lag while orbiting around a detailed model, LOD and viewer options are worth tuning.
+              None of these affect the printer.
+            </p>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences → 3D Settings tab</div>
+              <div class="caption">We’ll add callouts for viewer/navigation options once captured.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="presets">
+        <div class="content-heading">Presets & System Preset Updates</div>
+        <div class="content-tagline">What “system preset packages” are, what they change, and how to stay sane.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">What a system preset update is (and isn’t)</div>
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li><strong>Not firmware</strong> (doesn’t flash the printer).</li>
+                <li><strong>Not a full Studio update</strong> (doesn’t replace the app).</li>
+                <li><strong>It updates built-in profiles/templates</strong> used when slicing (including start/end sequences).</li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Why this matters on A1 (even without AMS)</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                These updates can change purge lines, Z-lift timing, plate parameters, and other templates that affect how the A1 starts a print.
+                If you suddenly see behavior changes after accepting an update, check <a href="update-history.html">Update History</a> and
+                <a href="troubleshooting.html">Troubleshooting</a>.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Example: BBL 2.4.0.5 preset package</div>
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li>Fix: HMS timelapse “failed” when USB isn’t inserted (false warning).</li>
+                <li>Fix: potential bed scraping after pre-extrusion line in some scenarios.</li>
+                <li>Fix: wipe tower path clipping a corner region.</li>
+                <li>Updates: templates and some plate parameters.</li>
+              </ul>
+              <p style="font-size:12px; color:var(--text-faint); margin-top:8px;">
+                We log details so you don’t have to remember what changed later.
+              </p>
+            </div>
+
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: System Preset Update prompt dialog</div>
+              <div class="caption">Grab this prompt whenever it appears.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="associations">
+        <div class="content-heading">File Associations</div>
+        <div class="content-tagline">Which file types open in Bambu Studio when you double-click in Windows.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li><strong>3MF</strong>: recommended to associate with Studio.</li>
+                <li><strong>STL</strong>: optional; depends if you also use other slicers.</li>
+                <li><strong>STEP</strong>: useful if you import CAD geometry directly.</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences → File Associations tab</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="project-downloads">
+        <div class="content-heading">Project, Downloads & Media</div>
+        <div class="content-tagline">Recents, autosave/backup, download folders, and media handling.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Autosave / backup</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                Keep autosave enabled. It’s your safety net when something closes or crashes.
+              </p>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Downloads folder</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                Controls where new downloads land. It doesn’t move existing files—only new ones.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences → Project tab</div>
+              <div class="caption">If your build splits Project vs Downloads/Media, capture both.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="theme-dev">
+        <div class="content-heading">Theme, UX & Develop Mode</div>
+        <div class="content-tagline">Dark mode, convenience toggles, and developer options.</div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Dark mode & UX</div>
+              <ul style="font-size:13px; line-height:1.7; margin:0; padding-left:18px;">
+                <li><strong>Dark mode</strong>: easier on eyes at night.</li>
+                <li><strong>Account convenience</strong>: safe; just affects login behavior.</li>
+              </ul>
+            </div>
+
+            <div class="callout-box">
+              <div class="callout-title">Develop mode (use caution)</div>
+              <p style="font-size:13px; line-height:1.6; margin:0;">
+                Enables experimental features. Leave OFF unless we’re documenting a feature that requires it.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="screenshot-frame">
+              <div class="screenshot-placeholder">Screenshot: Preferences → Dark Mode & UX tab</div>
+            </div>
+            <div class="screenshot-frame" style="margin-top:12px;">
+              <div class="screenshot-placeholder">Screenshot: Preferences → Develop Mode tab</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group" id="next">
+        <div class="content-heading">Next screenshots to capture</div>
+        <div class="content-tagline">Replace placeholders and label every toggle exactly.</div>
+        <ul style="font-size:13px; line-height:1.7; padding-left:18px;">
+          <li>Preferences window (full, with category list)</li>
+          <li>General tab</li>
+          <li>3D Settings tab</li>
+          <li>Presets tab</li>
+          <li>File Associations tab</li>
+          <li>Project tab + Downloads/Media (whatever your build shows)</li>
+          <li>Dark Mode & UX tab</li>
+          <li>Develop Mode tab</li>
+          <li>System Preset Update prompt dialog (when it appears)</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
