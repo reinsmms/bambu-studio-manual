@@ -1,0 +1,130 @@
+# =========================
+# INDEX / OVERVIEW
+# =========================
+index-home-empty.png
+
+# =========================
+# FILE MENU
+# =========================
+menu-file-expanded.png
+menu-file-open-project-dialog.png
+menu-file-import-model-dialog.png
+
+# =========================
+# VIEW MENU
+# =========================
+menu-view-expanded.png
+menu-view-panels-visible.png
+menu-view-camera-options.png
+
+# =========================
+# HELP MENU
+# =========================
+menu-help-expanded.png
+menu-help-about-dialog.png
+menu-help-check-for-updates.png
+menu-help-feedback-dialog.png
+
+# =========================
+# PREFERENCES
+# =========================
+preferences-window-overview.png
+preferences-general-tab.png
+preferences-3d-settings-tab.png
+preferences-presets-tab.png
+preferences-file-associations-tab.png
+preferences-project-tab.png
+preferences-downloads-media-tab.png
+preferences-dark-mode-tab.png
+preferences-develop-mode-tab.png
+preferences-system-preset-update-dialog.png
+
+# =========================
+# PREPARE TAB – TOOLBAR
+# =========================
+prepare-toolbar-full.png
+prepare-toolbar-move-tooltip.png
+prepare-toolbar-scale-tooltip.png
+prepare-toolbar-rotate-tooltip.png
+prepare-toolbar-mirror-tooltip.png
+prepare-toolbar-place-on-face-tooltip.png
+prepare-toolbar-lay-flat-tooltip.png
+prepare-toolbar-arrange-tooltip.png
+prepare-toolbar-duplicate-tooltip.png
+prepare-toolbar-split-tooltip.png
+prepare-toolbar-cut-tooltip.png
+prepare-toolbar-support-blocker-tooltip.png
+prepare-toolbar-support-enforcer-tooltip.png
+prepare-toolbar-paint-tooltip.png
+prepare-toolbar-variable-layer-height-tooltip.png
+prepare-toolbar-measure-tooltip.png
+
+# =========================
+# PREPARE TAB – PANELS
+# =========================
+prepare-printer-config-panel.png
+prepare-object-list-panel.png
+prepare-object-properties-panel.png
+prepare-bed-plate-selector.png
+prepare-process-preset-sidebar.png
+
+# =========================
+# PREVIEW TAB
+# =========================
+preview-toolbar.png
+preview-layer-slider.png
+preview-supports-visible.png
+preview-overhang-heatmap.png
+
+# =========================
+# SUPPORTS
+# =========================
+supports-settings-panel.png
+supports-support-painting-mode.png
+supports-organic-support-selection.png
+
+# =========================
+# PER-OBJECT SETTINGS
+# =========================
+per-object-settings-panel.png
+per-object-modifier-mesh-added.png
+per-object-support-overrides.png
+
+# =========================
+# IRONING
+# =========================
+ironing-settings-panel.png
+
+# =========================
+# TIMELAPSE (DESKTOP)
+# =========================
+timelapse-studio-settings.png
+
+# =========================
+# BAMBU HANDY (MOBILE)
+# =========================
+handy-device-overview.png
+handy-timelapse-external-storage.png
+handy-timelapse-local-storage.png
+handy-timelapse-download-button.png
+handy-timelapse-playing.png
+handy-camera-live-view.png
+
+# =========================
+# WORKFLOWS
+# =========================
+workflow-import-model.png
+workflow-auto-arrange.png
+workflow-slice-preview.png
+workflow-send-to-printer-dialog.png
+workflow-print-monitoring.png
+
+# =========================
+# TROUBLESHOOTING
+# =========================
+troubleshooting-preset-update-warning.png
+
+# =========================
+# UPDATE HISTORY
+# =========================
+update-history-example-entry.png

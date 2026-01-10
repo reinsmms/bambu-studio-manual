@@ -1,149 +1,17 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Bambu Studio Manual – A1 (No AMS)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Bambu Studio Manual</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="assets/js/lightbox.js" defer></script>
 <body>
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <div class="sidebar-title">Bambu Studio Manual</div>
-        <div class="sidebar-subtitle">Bambu Lab A1 · No AMS Lite</div>
-        <div class="badge">
-          <span class="badge-dot"></span>
-          <span>Real-world verified</span>
-        </div>
-        <div class="sidebar-meta">
-          <span>Studio: 2.4.0.70</span>
-          <span>Profile: A1 (No AMS)</span>
-        </div>
-      </div>
-
-      <div>
-        <div class="nav-section-title">Overview</div>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="active">
-              <span class="nav-bullet"></span>
-              <span>Intro & Scope</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="nav-section-title">Menus & Preferences</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="file-menu.html"><span class="nav-bullet"></span><span>File Menu</span></a></li>
-          <li class="nav-item"><a href="help-menu.html"><span class="nav-bullet"></span><span>Help Menu</span></a></li>
-          <li class="nav-item"><a href="view-menu.html"><span class="nav-bullet"></span><span>View Menu</span></a></li>
-          <li class="nav-item"><a href="preferences.html"><span class="nav-bullet"></span><span>Preferences</span></a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="nav-section-title">Key Features</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="supports.html"><span class="nav-bullet"></span><span>Supports</span></a></li>
-          <li class="nav-item"><a href="per-object.html"><span class="nav-bullet"></span><span>Per-Object Settings</span></a></li>
-          <li class="nav-item"><a href="ironing.html"><span class="nav-bullet"></span><span>Ironing</span></a></li>
-          <li class="nav-item"><a href="timelapse.html"><span class="nav-bullet"></span><span>Timelapse</span></a></li>
-          <li class="nav-item"><a href="workflows.html"><span class="nav-bullet"></span><span>Workflows</span></a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="nav-section-title">Reference</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="troubleshooting.html"><span class="nav-bullet"></span><span>Troubleshooting</span></a></li>
-          <li class="nav-item"><a href="glossary.html"><span class="nav-bullet"></span><span>Glossary</span></a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <main class="main">
-      <header class="top-bar">
-        <div class="top-bar-main">
-          <div class="top-title">Intro & Scope</div>
-          <div class="top-subtitle">
-            Bambu Studio manual focused on Bambu Lab A1 without AMS Lite,
-            based on real behavior from your actual setup.
-          </div>
-        </div>
-        <div class="version-pill">
-          <strong>Bambu Studio: 2.4.0.70</strong>
-          <span>Verified on: 2025-11-28</span>
-          <span>Profile: A1 · No AMS</span>
-        </div>
-      </header>
-
-      <section class="content-group">
-        <div class="content-heading">What this manual is</div>
-        <div class="content-tagline">
-          A living reference for how Bambu Studio really behaves on your hardware, not just what the wiki says.
-        </div>
-
-        <div class="content-columns">
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">Scope</div>
-              <p>This manual is verified against:</p>
-              <ul>
-                <li>Bambu Studio 2.4.0.70 (Windows)</li>
-                <li>Bambu Lab A1 printer profile</li>
-                <li>No AMS Lite connected</li>
-                <li>Common materials: PLA / PLA+</li>
-              </ul>
-            </div>
-
-            <div class="callout-box">
-              <div class="callout-title">How to use it</div>
-              <p style="font-size:13px;">
-                Use the sidebar to jump to topic pages:
-              </p>
-              <ul style="font-size:13px; line-height:1.6;">
-                <li><strong>Menus & Preferences</strong> – what every option actually does.</li>
-                <li><strong>Supports / Ironing / Timelapse</strong> – behavior in real prints.</li>
-                <li><strong>Workflows</strong> – start-to-finish recipes.</li>
-                <li><strong>Troubleshooting</strong> – “it didn’t do what I expected” cases.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <div class="screenshot-frame">
-              <div class="screenshot-placeholder">
-                Main Bambu Studio window screenshot goes here
-              </div>
-              <ul class="callout-list">
-                <li><span class="callout-number">1</span> Main toolbar (Prepare / Preview / Device).</li>
-                <li><span class="callout-number">2</span> Object list and per-model controls.</li>
-                <li><span class="callout-number">3</span> Process / filament settings panel.</li>
-                <li><span class="callout-number">4</span> Device status (printer, bed, timelapse).</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-group">
-        <div class="content-heading">Methodology</div>
-        <div class="content-tagline">
-          How we keep this manual accurate as Bambu Studio changes.
-        </div>
-        <ol style="font-size:13px; line-height:1.6; padding-left:18px;">
-          <li>Document UI only after seeing it in your live Studio.</li>
-          <li>Prefer real behavior over wiki or marketing text.</li>
-          <li>No external “deep research” for menu layout.</li>
-          <li>Use GitHub / release notes / Discord to confirm changes.</li>
-          <li>Clearly mark anything that doesn’t apply to A1 (no AMS).</li>
-        </ol>
-      </section>
-    </main>
-  </div>
+  <h1>Bambu Studio Manual</h1>
+  <ul>
+    <li><a href="prepare.html">Prepare</a></li>
+    <li><a href="slice.html">Slice</a></li>
+    <li><a href="device.html">Device</a></li>
+    <li><a href="preferences.html">Preferences</a></li>
+  </ul>
 </body>
 </html>
