@@ -1,26 +1,41 @@
+@ -1,149 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Prepare – Supports & Surface Tools – Bambu Studio Manual (A1)</title>
+  <title>Prepare – Supports & Surface Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <title>Prepare – Supports & Surface Tools</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="assets/js/lightbox.js" defer></script>
 <body>
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-header">
         <div class="sidebar-title">Bambu Studio Manual</div>
         <div class="sidebar-subtitle">Bambu Lab A1 · No AMS Lite</div>
-        <div class="badge"><span class="badge-dot"></span><span>Real-world verified</span></div>
-        <div class="sidebar-meta"><span>Studio: 2.4.0.70</span><span>Profile: A1 (No AMS)</span></div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Real-world verified</span>
+        </div>
+        <div class="sidebar-meta">
+          <span>Studio: 2.4.0.70</span>
+          <span>Profile: A1 (No AMS)</span>
+        </div>
       </div>
 
       <div>
         <div class="nav-section-title">Overview</div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="index.html"><span class="nav-bullet"></span><span>Intro & Scope</span></a></li>
+          <li class="nav-item">
+            <a href="index.html" class="active">
+              <span class="nav-bullet"></span>
+              <span>Intro & Scope</span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -34,21 +49,42 @@
         </ul>
       </div>
 
-      <div>
-        <div class="nav-section-title">Main Mode Tabs</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="prepare.html"><span class="nav-bullet"></span><span>Prepare</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_overview.html"><span class="nav-bullet"></span><span>Prepare – Overview</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_object_layout.html"><span class="nav-bullet"></span><span>Prepare – Object Layout & Organization</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_supports_surface_tools.html" class="active"><span class="nav-bullet"></span><span>Prepare – Supports & Surface Tools</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_plates_layout_control.html"><span class="nav-bullet"></span><span>Prepare – Plates & Layout Control</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_print_filament_concepts.html"><span class="nav-bullet"></span><span>Prepare – Print & Filament Settings (Concepts)</span></a></li>
-          <li class="nav-item"><a href="slice.html"><span class="nav-bullet"></span><span>Slice (Preview)</span></a></li>
-          <li class="nav-item"><a href="device.html"><span class="nav-bullet"></span><span>Device</span></a></li>
-          <li class="nav-item"><a href="project.html"><span class="nav-bullet"></span><span>Project</span></a></li>
-          <li class="nav-item"><a href="calibration.html"><span class="nav-bullet"></span><span>Calibration</span></a></li>
-        </ul>
-      </div>
+<div>
+  <div class="nav-section-title">Main Mode Tabs</div>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="prepare.html">
+        <span class="nav-bullet"></span>
+        <span>Prepare</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="slice.html">
+        <span class="nav-bullet"></span>
+        <span>Slice (Preview)</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="device.html">
+        <span class="nav-bullet"></span>
+        <span>Device</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="project.html">
+        <span class="nav-bullet"></span>
+        <span>Project</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="calibration.html">
+        <span class="nav-bullet"></span>
+        <span>Calibration</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
       <div>
         <div class="nav-section-title">Key Features</div>
@@ -73,8 +109,11 @@
     <main class="main">
       <header class="top-bar">
         <div class="top-bar-main">
-          <div class="top-title">Prepare – Supports & Surface Tools</div>
-          <div class="top-subtitle">Paint supports and other surface tools (including fuzzy skin painting).</div>
+          <div class="top-title">Intro & Scope</div>
+          <div class="top-subtitle">
+            Bambu Studio manual focused on Bambu Lab A1 without AMS Lite,
+            based on real behavior from your actual setup.
+          </div>
         </div>
         <div class="version-pill">
           <strong>Bambu Studio: 2.4.0.70</strong>
@@ -83,84 +122,55 @@
         </div>
       </header>
 
-
       <section class="content-group">
-        <div class="content-heading">Paint Support tool (controls + colors)</div>
-        <div class="content-tagline">
-          Support painting is fast once you memorize the controls and what each color means.
-        </div>
-
-        <div class="content-columns">
-          <div>
-            <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-              <li><strong>Left click:</strong> Enforce supports (<span style="color:#7a4dff; font-weight:700;">purple</span>)</li>
-              <li><strong>Right click:</strong> Block supports (<span style="color:#cc3333; font-weight:700;">red</span>)</li>
-              <li><strong>Shift + left click:</strong> Erase painting (returns to default / <span style="color:#666; font-weight:700;">grey</span>)</li>
-              <li><strong>Ctrl + mouse wheel:</strong> Change pen size</li>
-              <li><strong>Cyan:</strong> typically indicates contact region at the plate / interface highlight</li>
-            </ul>
-
-            <div style="margin-top:10px; font-size:13px;">
-              <strong>Screenshots:</strong><br>
-              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_202809-PanFlute_v2 - BambuStudio.png</code><br>
-              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_204104-PanFlute_v2 - BambuStudio.png</code><br>
-              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_203958-PanFlute_v2_Support Painting colors - BambuStudio.png</code>
-            </div>
-          </div>
-
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">Practical tip</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                Think “paint where supports are allowed.” Purple adds support. Red forbids support. Grey removes your paint so the slicer decides again.
-              </p>
-            </div>
-          </div>
-        </div>
+        <h1>Prepare – Supports & Surface Tools</h1>
+        <p>This page covers interactive tools in <strong>Prepare</strong> mode that let you paint or restrict behaviors on specific surfaces.</p>
+<h2>Paint Support Tool</h2>
+<p>Paint Support lets you tell Bambu Studio exactly where supports are allowed (or forbidden) on a model surface.</p>
+<h2>Controls & colors (as shown in the UI)</h2>
+<ul>
+<li><strong>Left mouse button:</strong> Enforce supports (<em>Purple</em>)</li>
+<li><strong>Right mouse button:</strong> Block supports (<em>Red</em>)</li>
+<li><strong>Shift + Left mouse button:</strong> Erase painting (<em>Grey</em> / default surface)</li>
+<li><strong>Ctrl + Mouse wheel:</strong> Set pen size</li>
+<li>You may also see a <strong>cyan</strong> highlight where the model contacts the build plate (visual aid).</li>
+</ul>
+<p><strong>Tip:</strong> Treat this as “painting rules” onto the surface. You are not placing physical supports—you’re defining where the slicer is allowed to generate them.</p>
+<figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260101_202809-PanFlute_v2 - BambuStudio.png" alt="Paint Support tool in Prepare mode (example model)." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Paint Support tool in Prepare mode (example model).</figcaption>
+</figure><figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260101_203958-PanFlute_v2_Support Painting colors - BambuStudio.png" alt="Support painting colors (Enforce / Block / Erase) and plate-contact highlight." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Support painting colors (Enforce / Block / Erase) and plate-contact highlight.</figcaption>
+</figure><figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260101_204104-PanFlute_v2 - BambuStudio.png" alt="Example of painted support regions applied to the model." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Example of painted support regions applied to the model.</figcaption>
+</figure>
+<hr>
+<h2>Fuzzy Skin Painting Tool</h2>
+<p>Fuzzy Skin painting is used to apply (or exclude) fuzzy skin on specific surfaces, instead of enabling it for the entire model.</p>
+<h2>Fill tool options</h2>
+<ul>
+<li><strong>Smart fill angle:</strong> Limits the fill to connected faces that fall within an angle range. Useful for quickly targeting a band of surfaces without spilling onto neighboring geometry.</li>
+<li><strong>Section view:</strong> Lets you see and paint internal/occluded surfaces by cutting the view. Helpful when the area you want to paint is hard to reach from the outside.</li>
+</ul>
+<p><strong>Tip:</strong> If fill is jumping onto faces you didn’t intend, lower the smart fill angle so it stays on surfaces that are closer to the face you clicked.</p>
+<figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260103_163642_fuzzy_BambuStudio_001.png" alt="Fuzzy Skin painter – options panel (example view 1)." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Fuzzy Skin painter – options panel (example view 1).</figcaption>
+</figure><figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260103_163642_fuzzy_BambuStudio_002.png" alt="Fuzzy Skin painter – options panel (example view 2)." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Fuzzy Skin painter – options panel (example view 2).</figcaption>
+</figure><figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260103_163642_fuzzy_BambuStudio_003.png" alt="Fuzzy Skin painter – options panel (example view 3)." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Fuzzy Skin painter – options panel (example view 3).</figcaption>
+</figure><figure style="margin: 16px 0;">
+  <img src="assets/images/prepare/20260103_163642_fuzzy_BambuStudio_004.png" alt="Fuzzy Skin painter – options panel (example view 4)." style="max-width: 25%; height: auto; border: 1px solid #ddd; border-radius: 6px;">
+  <figcaption style="font-size: 0.95em; opacity: 0.9; margin-top: 6px;">Fuzzy Skin painter – options panel (example view 4).</figcaption>
+</figure>
+<hr>
+<p><strong>Related:</strong> <a href="prepare.html">Prepare (landing)</a></p>
       </section>
-
-      <section class="content-group">
-        <div class="content-heading">Fuzzy Skin painting tool (Fill, Smart Fill Angle, Section View)</div>
-        <div class="content-tagline">
-          Fuzzy Skin painting lets you apply texture only where you want it, without changing the whole model.
-        </div>
-
-        <div class="content-columns">
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">Smart Fill Angle</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                Limits what the <strong>Fill</strong> tool considers “connected” based on surface angle. Smaller angles stay on similar faces; larger angles spill around corners.
-              </p>
-            </div>
-            <div class="callout-box" style="margin-top:10px;">
-              <div class="callout-title">Section View</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                Lets you cut the view to paint interior or hidden surfaces without rotating endlessly.
-              </p>
-            </div>
-
-            <div style="margin-top:10px; font-size:13px;">
-              <strong>Screenshots:</strong><br>
-              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_001.png</code><br>
-              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_002.png</code><br>
-              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_003.png</code><br>
-              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_004.png</code>
-            </div>
-          </div>
-
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">Brush vs Fill</div>
-              <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li><strong>Brush:</strong> you paint exactly where the effect applies.</li>
-                <li><strong>Fill:</strong> flood-fills connected surfaces (controlled by Smart Fill Angle).</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
     </main>
   </div>

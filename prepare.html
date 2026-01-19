@@ -1,26 +1,41 @@
+@ -1,149 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Prepare – Bambu Studio Manual (A1)</title>
+  <title>Prepare</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <title>Prepare</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="assets/js/lightbox.js" defer></script>
 <body>
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-header">
         <div class="sidebar-title">Bambu Studio Manual</div>
         <div class="sidebar-subtitle">Bambu Lab A1 · No AMS Lite</div>
-        <div class="badge"><span class="badge-dot"></span><span>Real-world verified</span></div>
-        <div class="sidebar-meta"><span>Studio: 2.4.0.70</span><span>Profile: A1 (No AMS)</span></div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span>Real-world verified</span>
+        </div>
+        <div class="sidebar-meta">
+          <span>Studio: 2.4.0.70</span>
+          <span>Profile: A1 (No AMS)</span>
+        </div>
       </div>
 
       <div>
         <div class="nav-section-title">Overview</div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="index.html"><span class="nav-bullet"></span><span>Intro & Scope</span></a></li>
+          <li class="nav-item">
+            <a href="index.html" class="active">
+              <span class="nav-bullet"></span>
+              <span>Intro & Scope</span>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -34,21 +49,42 @@
         </ul>
       </div>
 
-      <div>
-        <div class="nav-section-title">Main Mode Tabs</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="prepare.html" class="active"><span class="nav-bullet"></span><span>Prepare</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_overview.html"><span class="nav-bullet"></span><span>Prepare – Overview</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_object_layout.html"><span class="nav-bullet"></span><span>Prepare – Object Layout & Organization</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_supports_surface_tools.html"><span class="nav-bullet"></span><span>Prepare – Supports & Surface Tools</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_plates_layout_control.html"><span class="nav-bullet"></span><span>Prepare – Plates & Layout Control</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_print_filament_concepts.html"><span class="nav-bullet"></span><span>Prepare – Print & Filament Settings (Concepts)</span></a></li>
-          <li class="nav-item"><a href="slice.html"><span class="nav-bullet"></span><span>Slice (Preview)</span></a></li>
-          <li class="nav-item"><a href="device.html"><span class="nav-bullet"></span><span>Device</span></a></li>
-          <li class="nav-item"><a href="project.html"><span class="nav-bullet"></span><span>Project</span></a></li>
-          <li class="nav-item"><a href="calibration.html"><span class="nav-bullet"></span><span>Calibration</span></a></li>
-        </ul>
-      </div>
+<div>
+  <div class="nav-section-title">Main Mode Tabs</div>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a href="prepare.html">
+        <span class="nav-bullet"></span>
+        <span>Prepare</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="slice.html">
+        <span class="nav-bullet"></span>
+        <span>Slice (Preview)</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="device.html">
+        <span class="nav-bullet"></span>
+        <span>Device</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="project.html">
+        <span class="nav-bullet"></span>
+        <span>Project</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="calibration.html">
+        <span class="nav-bullet"></span>
+        <span>Calibration</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
       <div>
         <div class="nav-section-title">Key Features</div>
@@ -73,8 +109,11 @@
     <main class="main">
       <header class="top-bar">
         <div class="top-bar-main">
-          <div class="top-title">Prepare</div>
-          <div class="top-subtitle">Set up geometry, plates, supports, and print intent before slicing.</div>
+          <div class="top-title">Intro & Scope</div>
+          <div class="top-subtitle">
+            Bambu Studio manual focused on Bambu Lab A1 without AMS Lite,
+            based on real behavior from your actual setup.
+          </div>
         </div>
         <div class="version-pill">
           <strong>Bambu Studio: 2.4.0.70</strong>
@@ -83,50 +122,13 @@
         </div>
       </header>
 
-
       <section class="content-group">
-        <div class="content-heading">Prepare mode</div>
-        <div class="content-tagline">
-          <strong>Prepare</strong> is where you set up geometry, plates, supports, and print intent <em>before</em> slicing.
-        </div>
-
-        <div class="content-columns">
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">Start here</div>
-              <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li><a href="prepare_overview.html">Prepare – Overview</a></li>
-                <li><a href="prepare_object_layout.html">Prepare – Object Layout &amp; Organization</a></li>
-                <li><a href="prepare_supports_surface_tools.html">Prepare – Supports &amp; Surface Tools</a></li>
-                <li><a href="prepare_plates_layout_control.html">Prepare – Plates &amp; Layout Control</a></li>
-                <li><a href="prepare_print_filament_concepts.html">Prepare – Print &amp; Filament Settings (Concepts)</a></li>
-              </ul>
-            </div>
-
-            <div class="callout-box" style="margin-top:12px;">
-              <div class="callout-title">Rule (locked)</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                When documenting anything from Bambu Studio, we associate it with exactly one <strong>Main Mode Tab</strong>.
-                If it spans tabs, assign it to the originating tab and cross-reference.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div class="callout-box">
-              <div class="callout-title">What belongs in Prepare</div>
-              <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li>Importing and organizing models on a plate</li>
-                <li>Assemblies / merges / per-object control</li>
-                <li>Support painting and other surface tools</li>
-                <li>Plate layout and locking</li>
-                <li>Understanding print &amp; filament settings (concepts)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1>Prepare</h1>
+        <p>Prepare mode is where you arrange models, assign per-object behaviors, and set up the plate before slicing.</p>
+<h2>Prepare pages (in progress)</h2>
+<ul><li><a href="prepare_supports_surface_tools.html">Supports &amp; Surface Tools</a></li></ul>
+<p>More Prepare subpages will be added next.</p>
       </section>
-
 
     </main>
   </div>
