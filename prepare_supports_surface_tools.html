@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prepare – Bambu Studio Manual (A1)</title>
+  <title>Prepare – Supports & Surface Tools – Bambu Studio Manual (A1)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -37,10 +37,10 @@
       <div>
         <div class="nav-section-title">Main Mode Tabs</div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="prepare.html" class="active"><span class="nav-bullet"></span><span>Prepare</span></a></li>
+          <li class="nav-item"><a href="prepare.html"><span class="nav-bullet"></span><span>Prepare</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_overview.html"><span class="nav-bullet"></span><span>Prepare – Overview</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_object_layout.html"><span class="nav-bullet"></span><span>Prepare – Object Layout & Organization</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_supports_surface_tools.html"><span class="nav-bullet"></span><span>Prepare – Supports & Surface Tools</span></a></li>
+<li class="nav-item" style="margin-left:12px;"><a href="prepare_supports_surface_tools.html" class="active"><span class="nav-bullet"></span><span>Prepare – Supports & Surface Tools</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_plates_layout_control.html"><span class="nav-bullet"></span><span>Prepare – Plates & Layout Control</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_print_filament_concepts.html"><span class="nav-bullet"></span><span>Prepare – Print & Filament Settings (Concepts)</span></a></li>
           <li class="nav-item"><a href="slice.html"><span class="nav-bullet"></span><span>Slice (Preview)</span></a></li>
@@ -73,8 +73,8 @@
     <main class="main">
       <header class="top-bar">
         <div class="top-bar-main">
-          <div class="top-title">Prepare</div>
-          <div class="top-subtitle">Set up geometry, plates, supports, and print intent before slicing.</div>
+          <div class="top-title">Prepare – Supports & Surface Tools</div>
+          <div class="top-subtitle">Paint supports and other surface tools (including fuzzy skin painting).</div>
         </div>
         <div class="version-pill">
           <strong>Bambu Studio: 2.4.0.70</strong>
@@ -85,42 +85,76 @@
 
 
       <section class="content-group">
-        <div class="content-heading">Prepare mode</div>
+        <div class="content-heading">Paint Support tool (controls + colors)</div>
         <div class="content-tagline">
-          <strong>Prepare</strong> is where you set up geometry, plates, supports, and print intent <em>before</em> slicing.
+          Support painting is fast once you memorize the controls and what each color means.
         </div>
 
         <div class="content-columns">
           <div>
-            <div class="callout-box">
-              <div class="callout-title">Start here</div>
-              <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li><a href="prepare_overview.html">Prepare – Overview</a></li>
-                <li><a href="prepare_object_layout.html">Prepare – Object Layout &amp; Organization</a></li>
-                <li><a href="prepare_supports_surface_tools.html">Prepare – Supports &amp; Surface Tools</a></li>
-                <li><a href="prepare_plates_layout_control.html">Prepare – Plates &amp; Layout Control</a></li>
-                <li><a href="prepare_print_filament_concepts.html">Prepare – Print &amp; Filament Settings (Concepts)</a></li>
-              </ul>
-            </div>
+            <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
+              <li><strong>Left click:</strong> Enforce supports (<span style="color:#7a4dff; font-weight:700;">purple</span>)</li>
+              <li><strong>Right click:</strong> Block supports (<span style="color:#cc3333; font-weight:700;">red</span>)</li>
+              <li><strong>Shift + left click:</strong> Erase painting (returns to default / <span style="color:#666; font-weight:700;">grey</span>)</li>
+              <li><strong>Ctrl + mouse wheel:</strong> Change pen size</li>
+              <li><strong>Cyan:</strong> typically indicates contact region at the plate / interface highlight</li>
+            </ul>
 
-            <div class="callout-box" style="margin-top:12px;">
-              <div class="callout-title">Rule (locked)</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                When documenting anything from Bambu Studio, we associate it with exactly one <strong>Main Mode Tab</strong>.
-                If it spans tabs, assign it to the originating tab and cross-reference.
-              </p>
+            <div style="margin-top:10px; font-size:13px;">
+              <strong>Screenshots:</strong><br>
+              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_202809-PanFlute_v2 - BambuStudio.png</code><br>
+              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_204104-PanFlute_v2 - BambuStudio.png</code><br>
+              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20260101_203958-PanFlute_v2_Support Painting colors - BambuStudio.png</code>
             </div>
           </div>
 
           <div>
             <div class="callout-box">
-              <div class="callout-title">What belongs in Prepare</div>
+              <div class="callout-title">Practical tip</div>
+              <p style="margin:0; font-size:13px; line-height:1.6;">
+                Think “paint where supports are allowed.” Purple adds support. Red forbids support. Grey removes your paint so the slicer decides again.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group">
+        <div class="content-heading">Fuzzy Skin painting tool (Fill, Smart Fill Angle, Section View)</div>
+        <div class="content-tagline">
+          Fuzzy Skin painting lets you apply texture only where you want it, without changing the whole model.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Smart Fill Angle</div>
+              <p style="margin:0; font-size:13px; line-height:1.6;">
+                Limits what the <strong>Fill</strong> tool considers “connected” based on surface angle. Smaller angles stay on similar faces; larger angles spill around corners.
+              </p>
+            </div>
+            <div class="callout-box" style="margin-top:10px;">
+              <div class="callout-title">Section View</div>
+              <p style="margin:0; font-size:13px; line-height:1.6;">
+                Lets you cut the view to paint interior or hidden surfaces without rotating endlessly.
+              </p>
+            </div>
+
+            <div style="margin-top:10px; font-size:13px;">
+              <strong>Screenshots:</strong><br>
+              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_001.png</code><br>
+              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_002.png</code><br>
+              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_003.png</code><br>
+              <code>E:\Storage\motorurl.com\bambu-studio-manual\Staged_Screenshots\20260103_163642_fuzzy_BambuStudio_004.png</code>
+            </div>
+          </div>
+
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Brush vs Fill</div>
               <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li>Importing and organizing models on a plate</li>
-                <li>Assemblies / merges / per-object control</li>
-                <li>Support painting and other surface tools</li>
-                <li>Plate layout and locking</li>
-                <li>Understanding print &amp; filament settings (concepts)</li>
+                <li><strong>Brush:</strong> you paint exactly where the effect applies.</li>
+                <li><strong>Fill:</strong> flood-fills connected surfaces (controlled by Smart Fill Angle).</li>
               </ul>
             </div>
           </div>

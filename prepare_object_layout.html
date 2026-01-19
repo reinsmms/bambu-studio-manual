@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Prepare – Bambu Studio Manual (A1)</title>
+  <title>Prepare – Object Layout & Organization – Bambu Studio Manual (A1)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -37,9 +37,9 @@
       <div>
         <div class="nav-section-title">Main Mode Tabs</div>
         <ul class="nav-list">
-          <li class="nav-item"><a href="prepare.html" class="active"><span class="nav-bullet"></span><span>Prepare</span></a></li>
+          <li class="nav-item"><a href="prepare.html"><span class="nav-bullet"></span><span>Prepare</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_overview.html"><span class="nav-bullet"></span><span>Prepare – Overview</span></a></li>
-<li class="nav-item" style="margin-left:12px;"><a href="prepare_object_layout.html"><span class="nav-bullet"></span><span>Prepare – Object Layout & Organization</span></a></li>
+<li class="nav-item" style="margin-left:12px;"><a href="prepare_object_layout.html" class="active"><span class="nav-bullet"></span><span>Prepare – Object Layout & Organization</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_supports_surface_tools.html"><span class="nav-bullet"></span><span>Prepare – Supports & Surface Tools</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_plates_layout_control.html"><span class="nav-bullet"></span><span>Prepare – Plates & Layout Control</span></a></li>
 <li class="nav-item" style="margin-left:12px;"><a href="prepare_print_filament_concepts.html"><span class="nav-bullet"></span><span>Prepare – Print & Filament Settings (Concepts)</span></a></li>
@@ -73,8 +73,8 @@
     <main class="main">
       <header class="top-bar">
         <div class="top-bar-main">
-          <div class="top-title">Prepare</div>
-          <div class="top-subtitle">Set up geometry, plates, supports, and print intent before slicing.</div>
+          <div class="top-title">Prepare – Object Layout & Organization</div>
+          <div class="top-subtitle">Assemblies, merges, and how to organize complex models on the plate.</div>
         </div>
         <div class="version-pill">
           <strong>Bambu Studio: 2.4.0.70</strong>
@@ -85,43 +85,69 @@
 
 
       <section class="content-group">
-        <div class="content-heading">Prepare mode</div>
+        <div class="content-heading">Assembly vs merged parts (mental model)</div>
         <div class="content-tagline">
-          <strong>Prepare</strong> is where you set up geometry, plates, supports, and print intent <em>before</em> slicing.
+          An <strong>assembly</strong> keeps separate pieces together as a group. A <strong>merge</strong> fuses geometry.
         </div>
 
         <div class="content-columns">
           <div>
             <div class="callout-box">
-              <div class="callout-title">Start here</div>
+              <div class="callout-title">Assembly (grouping)</div>
               <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li><a href="prepare_overview.html">Prepare – Overview</a></li>
-                <li><a href="prepare_object_layout.html">Prepare – Object Layout &amp; Organization</a></li>
-                <li><a href="prepare_supports_surface_tools.html">Prepare – Supports &amp; Surface Tools</a></li>
-                <li><a href="prepare_plates_layout_control.html">Prepare – Plates &amp; Layout Control</a></li>
-                <li><a href="prepare_print_filament_concepts.html">Prepare – Print &amp; Filament Settings (Concepts)</a></li>
+                <li>Keeps multiple parts linked as one logical unit</li>
+                <li>You can still select parts inside the assembly</li>
+                <li>Great for organizing complex models (like multi-part prints)</li>
               </ul>
             </div>
-
-            <div class="callout-box" style="margin-top:12px;">
-              <div class="callout-title">Rule (locked)</div>
-              <p style="margin:0; font-size:13px; line-height:1.6;">
-                When documenting anything from Bambu Studio, we associate it with exactly one <strong>Main Mode Tab</strong>.
-                If it spans tabs, assign it to the originating tab and cross-reference.
-              </p>
+            <div style="margin-top:10px; font-size:13px;">
+              <strong>Screenshot:</strong><br>
+              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20251225_231348-BARN_Assembly - BambuStudio.png</code>
             </div>
           </div>
-
           <div>
             <div class="callout-box">
-              <div class="callout-title">What belongs in Prepare</div>
+              <div class="callout-title">Merged part (fusing geometry)</div>
               <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
-                <li>Importing and organizing models on a plate</li>
-                <li>Assemblies / merges / per-object control</li>
-                <li>Support painting and other surface tools</li>
-                <li>Plate layout and locking</li>
-                <li>Understanding print &amp; filament settings (concepts)</li>
+                <li>Combines selected parts into one object</li>
+                <li>After merging, you generally lose part-level selection</li>
+                <li>Useful when you need a single printable object or to simplify the object list</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-group">
+        <div class="content-heading">Sub-merge vs merge into single part</div>
+        <div class="content-tagline">
+          Both reduce clutter, but they behave differently when you need to edit later.
+        </div>
+
+        <div class="content-columns">
+          <div>
+            <ul style="font-size:13px; line-height:1.7; padding-left:16px;">
+              <li><strong>Sub-merge:</strong> keeps a parent/child structure so parts stay identifiable under one node.</li>
+              <li><strong>Merge into single part:</strong> fuses geometry into one part.</li>
+              <li><strong>Fix Model:</strong> attempts to repair manifold issues and mesh problems.</li>
+            </ul>
+            <div class="callout-box" style="margin-top:12px;">
+              <div class="callout-title">Rule of thumb</div>
+              <p style="margin:0; font-size:13px; line-height:1.6;">
+                Use <strong>assembly/sub-merge</strong> when you may need to tweak parts later. Use <strong>merge into single part</strong> when you want “one object, one outcome.”
+              </p>
+            </div>
+            <div style="margin-top:10px; font-size:13px;">
+              <strong>Screenshot:</strong><br>
+              <code>E:\Storage\motorurl.com\Bambu_Studio_Manual\Staged_Screenshots\20251225_231858-BARN_Assembly - BambuStudio.png</code>
+            </div>
+          </div>
+          <div>
+            <div class="callout-box">
+              <div class="callout-title">Where to find it</div>
+              <p style="margin:0; font-size:13px; line-height:1.6;">
+                Right‑click an object in the Objects list (or on the plate) to see assembly/merge options.
+              </p>
             </div>
           </div>
         </div>
